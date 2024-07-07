@@ -1,0 +1,86 @@
+<section class="chat-container">
+    <div class="container-fluid py-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8 col-lg-6 col-xl-4">
+
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center p-3" style="border-top: 4px solid #ffa900;">
+              <h5 class="mb-0">Chat with DataSage</h5>
+              <div class="d-flex flex-row align-items-center">
+                <span class="badge bg-warning me-3">20</span>
+                <i class="fas fa-minus me-3 text-muted fa-xs"></i>
+                <i class="fas fa-comments me-3 text-muted fa-xs"></i>
+                <i class="fas fa-times text-muted fa-xs"></i>
+              </div>
+            </div>
+            <div class="card-body chat-box" data-mdb-perfect-scrollbar-init style="position: relative; height: 400px">
+
+              <div class="d-flex justify-content-start message bot">
+                <i class="bi bi-robot bot-icon"></i>
+                <div>
+                  <p class="small p-2 ms-3 mb-3 rounded-3 text">Hello! How can I assist you today? Are you looking for datasets or tables?</p>
+                </div>
+              </div>
+
+              <!-- Example conversation -->
+              <div class="d-flex justify-content-end message user">
+                <div>
+                  <p class="small p-2 me-3 mb-3 rounded-3 text">Hi! I'm looking for tables related to sales data.</p>
+                </div>
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp" alt="avatar 1" style="width: 45px; height: 100%;">
+              </div>
+
+              <div class="d-flex justify-content-start message bot">
+                <i class="bi bi-robot bot-icon"></i>
+                <div>
+                  <p class="small p-2 ms-3 mb-3 rounded-3 text">Sure! Here are a couple of tables containing metadata related to sales data:</p>
+                  <div class="product">
+                    <img src="https://via.placeholder.com/60" alt="Table 1">
+                    <div class="details">
+                      <span>Sales_Data_2023</span>
+                      <span class="price">Table</span>
+                      <span>Contains information about sales transactions in 2023.</span>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <img src="https://via.placeholder.com/60" alt="Table 2">
+                    <div class="details">
+                      <span>Sales_Region_Analysis</span>
+                      <span class="price">Table</span>
+                      <span>Provides regional analysis of sales performance.</span>
+                    </div>
+                  </div>
+                  <p class="small p-2 ms-3 mb-3 rounded-3 text">These tables contain metadata such as column names and data types. Would you like more details?</p>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-end message user">
+                <div>
+                  <p class="small p-2 me-3 mb-3 rounded-3 text">I'm interested in the Sales_Region_Analysis table. Can you provide details on the columns?</p>
+                </div>
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp" alt="avatar 1" style="width: 45px; height: 100%;">
+              </div>
+
+              <div class="d-flex justify-content-start message bot">
+                <i class="bi bi-robot bot-icon"></i>
+                <div>
+                  <p class="small p-2 ms-3 mb-3 rounded-3 text">Certainly! The Sales_Region_Analysis table includes columns such as Region, Sales_Total, Profit_Margin, and Date. This metadata helps in understanding the structure of the data.</p>
+                  <p class="small p-2 ms-3 mb-3 rounded-3 text">If you have any specific questions about these columns or need further information, feel free to ask!</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3">
+              <div class="input-group mb-0">
+                <input type="text" class="form-control" placeholder="Type message" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-warning" type="button" id="button-addon2" style="padding-top: .55rem;">
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
